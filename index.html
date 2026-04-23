@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>SkyCast | Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="weather-card">
+    <h1>⛅ SkyCast</h1>
+    <div class="sub">Live weather · Global forecast</div>
+
+    <div class="search-section">
+      <div class="input-group">
+        <input type="text" id="cityInput" placeholder="e.g., London, Tokyo, New York" autocomplete="off">
+      </div>
+      <button id="searchBtn">🔍 Search</button>
+      <button id="locationBtn" class="location-btn">📍 My Location</button>
+    </div>
+
+    <div class="action-bar">
+      <button id="toggleUnitBtn" class="toggle-btn">🌡️ Switch to °F</button>
+      <button id="clearRecentBtn" class="clear-recent">🗑️ Clear recent</button>
+    </div>
+
+    <div id="loadingIndicator" style="text-align: center; min-height: 40px;"></div>
+
+    <div id="weatherDisplay" class="weather-info">
+      <div class="city-name" id="cityName">--</div>
+      <div id="weatherIconContainer"></div>
+      <div class="temp" id="tempDisplay">--<span>°C</span></div>
+      <div class="description" id="description">Enter a city name</div>
+      <div class="details">
+        <div class="detail-card">
+          <span>💧 Humidity</span>
+          <div class="value" id="humidity">--%</div>
+        </div>
+        <div class="detail-card">
+          <span>🌬️ Wind</span>
+          <div class="value" id="windSpeed">-- m/s</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="recent-title">📌 RECENT SEARCHES</div>
+    <div id="recentContainer" class="recent-buttons">
+      <span style="color:#eef4ff80; font-size:0.8rem;">— none yet —</span>
+    </div>
+    <hr />
+    <footer>Powered by OpenWeatherMap · real-time data</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
