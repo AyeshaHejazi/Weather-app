@@ -2,7 +2,7 @@
 A beautiful, real‑time weather application that fetches live weather data from the OpenWeatherMap API.
 Search any city, use your current location, toggle between °C/°F, and keep a list of recent searches – all saved in your browser.
 
-🔗 Live Demo: [https://github.io/weather-app/](https://github.com/AyeshaHejazi/Weather-app/commit/c9664040280dec07e8f018048dfdb705b08b234c)
+🔗 Live Demo: https://ayeshahejazi.github.io/Weather-app/
 Screenshot: Screenshot.png
 
 ✨ Features
